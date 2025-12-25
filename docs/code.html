@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Rizky | Neo-Brutalist Portfolio</title>
+<meta content="Personal Portfolio Homepage - Rounded Neo-Brutalism Style" name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    fontFamily: {
+                        display: ["'Space Grotesk'", "sans-serif"],
+                        body: ["'Space Grotesk'", "sans-serif"],
+                    },
+                    colors: {
+                        // The primary color from the prompt (Lime Green) - used in both modes
+                        primary: "#99E885", 
+                        // Backgrounds
+                        "background-light": "#FFFDF5", // Creamy off-white
+                        "background-dark": "#121212",  // Soft black
+                        // Surface colors for cards
+                        "surface-light": "#FFFFFF",
+                        "surface-dark": "#1E1E1E",
+                        // Accent Palette from Image 1
+                        "neo-pink": "#FE90E8",
+                        "neo-cyan": "#C0F7FE",
+                        "neo-yellow": "#F7CB46",
+                        "neo-black": "#000000",
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.75rem", // 12px
+                        "xl": "1rem",      // 16px
+                        "2xl": "1.5rem",   // 24px
+                        "3xl": "2rem",     // 32px
+                    },
+                    boxShadow: {
+                        'neo': '5px 5px 0px 0px rgba(0,0,0,1)',
+                        'neo-sm': '3px 3px 0px 0px rgba(0,0,0,1)',
+                        'neo-dark': '5px 5px 0px 0px #99E885', // Using primary color for shadow in dark mode for pop
+                        'neo-dark-white': '5px 5px 0px 0px #ffffff',
+                    }
+                },
+            },
+        };
+    </script>
+<style>.bg-dot-pattern {
+            background-image: radial-gradient(#000000 1.5px, transparent 1.5px);
+            background-size: 24px 24px;
+        }
+        .dark .bg-dot-pattern {
+            background-image: radial-gradient(#404040 1.5px, transparent 1.5px);
+        }body {
+            transition: background-color 0.3s, color 0.3s;
+        }.no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-black dark:text-white bg-dot-pattern min-h-screen selection:bg-neo-pink selection:text-black">
+<nav class="fixed top-0 left-0 right-0 z-50 border-b-4 border-black dark:border-white bg-surface-light dark:bg-surface-dark py-4 px-6 md:px-12 transition-colors duration-300">
+<div class="max-w-7xl mx-auto flex justify-between items-center">
+<a class="text-2xl font-bold uppercase tracking-tighter hover:text-neo-pink transition-colors" href="#">
+                Rizky<span class="text-primary">.dev</span>
+</a>
+<div class="flex items-center gap-6">
+<div class="hidden md:flex gap-6 font-bold text-lg">
+<a class="hover:underline decoration-4 decoration-primary underline-offset-4" href="#about">About</a>
+<a class="hover:underline decoration-4 decoration-neo-cyan underline-offset-4" href="#projects">Projects</a>
+<a class="hover:underline decoration-4 decoration-neo-pink underline-offset-4" href="#contact">Contact</a>
+</div>
+<button aria-label="Toggle Dark Mode" class="p-2 border-2 border-black dark:border-white rounded-full bg-neo-yellow dark:bg-transparent shadow-neo-sm dark:shadow-none hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none transition-all" id="theme-toggle">
+<span class="material-icons block dark:hidden">light_mode</span>
+<span class="material-icons hidden dark:block text-primary">dark_mode</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-24 pb-12 px-6 md:px-12 max-w-7xl mx-auto">
+<section class="min-h-[85vh] flex flex-col justify-center items-start gap-8 py-12" id="hero">
+<div class="inline-block bg-neo-cyan border-2 border-black dark:border-white rounded-full px-6 py-2 shadow-neo dark:shadow-neo-dark-white transform -rotate-2 hover:rotate-0 transition-transform duration-300">
+<span class="font-bold text-sm md:text-base tracking-widest text-black">FULL STACK DEVELOPER</span>
+</div>
+<h1 class="text-6xl md:text-8xl lg:text-9xl font-black leading-[0.9] tracking-tighter">
+                BUILDING <br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-neo-yellow dark:from-primary dark:to-neo-pink">DIGITAL</span> <br/>
+                EXPERIENCES
+            </h1>
+<p class="text-xl md:text-2xl font-medium max-w-2xl border-l-4 border-primary pl-6 py-2 text-gray-800 dark:text-gray-300">
+                Hi, I'm Rizky. I turn complex problems into chunky, beautiful, and functional code. Based in the cloud, deployed everywhere.
+            </p>
+<div class="flex flex-col sm:flex-row gap-4 mt-8 w-full sm:w-auto">
+<a class="group relative inline-flex items-center justify-center bg-black dark:bg-white text-white dark:text-black border-2 border-black dark:border-white px-8 py-4 text-xl font-bold rounded-xl shadow-neo dark:shadow-[5px_5px_0px_0px_#99E885] transition-all hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none" href="#projects">
+<span>View My Work</span>
+<span class="material-icons ml-2 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+<a class="group inline-flex items-center justify-center bg-white dark:bg-background-dark text-black dark:text-white border-2 border-black dark:border-white px-8 py-4 text-xl font-bold rounded-xl shadow-neo dark:shadow-neo-dark-white transition-all hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none" href="https://github.com/rizkypsr" target="_blank">
+<span class="mr-2">GitHub</span>
+<span class="material-icons text-2xl">code</span>
+</a>
+</div>
+</section>
+<section class="py-20 grid grid-cols-1 lg:grid-cols-12 gap-12 items-start" id="about">
+<div class="lg:col-span-5 relative group">
+<div class="absolute inset-0 bg-neo-pink rounded-2xl border-2 border-black dark:border-white transform translate-x-3 translate-y-3 dark:translate-x-2 dark:translate-y-2 group-hover:translate-x-5 group-hover:translate-y-5 transition-transform duration-300"></div>
+<div class="relative bg-surface-light dark:bg-surface-dark border-2 border-black dark:border-white rounded-2xl overflow-hidden aspect-[4/5] flex items-center justify-center">
+<img alt="Coding setup abstract representation" class="object-cover w-full h-full grayscale hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDhudZrCwxGi2a0HYecxXNGIcctgRTT55S6F-ZqTWwlGwQRqEdBo3bFOIokrAS_--1KkRWj329CFgZbBCoCDgjBpPg2ogCvDAf6pLWYIGE20A1nwQkuawYvd27C_KHHOKY9d1L0sIoTOdnTFik_MOwhV-AEns4BI7Zd2_kWGrSfzQ-JF4w7IHNCTvnddF_5zG8muiOwSWu0T4EUYifdcX1RaQBeZ2vqqSy6uZP2zM7mCdouvxv_ep6CgzyZkRah6BV3m7M27qIEoA"/>
+</div>
+</div>
+<div class="lg:col-span-7 flex flex-col gap-8">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-primary rounded-full border-2 border-black flex items-center justify-center">
+<span class="material-icons text-black">person</span>
+</div>
+<h2 class="text-4xl md:text-5xl font-bold uppercase">About Me</h2>
+</div>
+<div class="bg-white dark:bg-gray-900 border-2 border-black dark:border-white rounded-xl p-8 shadow-neo dark:shadow-neo-dark-white">
+<p class="text-lg leading-relaxed mb-6">
+                        I'm a passionate developer who believes that software should be robust, accessible, and delightful. My style is "Rounded Neo-Brutalism" because I believe in bold choices and clear boundaries.
+                    </p>
+<p class="text-lg leading-relaxed">
+                        With a background in computer science and a love for design, I bridge the gap between engineering and creative direction.
+                    </p>
+</div>
+<div>
+<h3 class="text-2xl font-bold mb-4 flex items-center gap-2">
+<span class="material-icons text-neo-yellow">bolt</span>
+                        Tech Stack
+                    </h3>
+<div class="flex flex-wrap gap-3">
+<span class="bg-neo-cyan text-black border-2 border-black px-4 py-2 rounded-full font-bold shadow-[2px_2px_0px_0px_#000] hover:translate-y-[-2px] hover:shadow-[4px_4px_0px_0px_#000] transition-all cursor-default">React</span>
+<span class="bg-neo-pink text-black border-2 border-black px-4 py-2 rounded-full font-bold shadow-[2px_2px_0px_0px_#000] hover:translate-y-[-2px] hover:shadow-[4px_4px_0px_0px_#000] transition-all cursor-default">TypeScript</span>
+<span class="bg-primary text-black border-2 border-black px-4 py-2 rounded-full font-bold shadow-[2px_2px_0px_0px_#000] hover:translate-y-[-2px] hover:shadow-[4px_4px_0px_0px_#000] transition-all cursor-default">Tailwind CSS</span>
+<span class="bg-neo-yellow text-black border-2 border-black px-4 py-2 rounded-full font-bold shadow-[2px_2px_0px_0px_#000] hover:translate-y-[-2px] hover:shadow-[4px_4px_0px_0px_#000] transition-all cursor-default">Node.js</span>
+<span class="bg-white text-black border-2 border-black px-4 py-2 rounded-full font-bold shadow-[2px_2px_0px_0px_#000] hover:translate-y-[-2px] hover:shadow-[4px_4px_0px_0px_#000] transition-all cursor-default">Next.js</span>
+<span class="bg-white text-black border-2 border-black px-4 py-2 rounded-full font-bold shadow-[2px_2px_0px_0px_#000] hover:translate-y-[-2px] hover:shadow-[4px_4px_0px_0px_#000] transition-all cursor-default">GraphQL</span>
+<span class="bg-neo-cyan text-black border-2 border-black px-4 py-2 rounded-full font-bold shadow-[2px_2px_0px_0px_#000] hover:translate-y-[-2px] hover:shadow-[4px_4px_0px_0px_#000] transition-all cursor-default">Figma</span>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20" id="projects">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 border-b-4 border-black dark:border-white pb-6">
+<div>
+<h2 class="text-5xl md:text-7xl font-black uppercase mb-2">Projects</h2>
+<p class="text-xl text-gray-600 dark:text-gray-400 font-bold">/// SELECTED WORKS</p>
+</div>
+<div class="hidden md:block">
+<span class="material-icons text-6xl animate-bounce">arrow_downward</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+<article class="bg-surface-light dark:bg-surface-dark border-4 border-black dark:border-white rounded-2xl overflow-hidden shadow-neo dark:shadow-neo-dark-white hover:shadow-none hover:translate-x-[4px] hover:translate-y-[4px] transition-all duration-200 group">
+<div class="bg-neo-pink h-48 sm:h-64 border-b-4 border-black dark:border-white flex items-center justify-center relative overflow-hidden">
+<div class="absolute top-4 right-4 w-16 h-16 bg-neo-yellow border-2 border-black rounded-full"></div>
+<div class="absolute bottom-[-20px] left-8 w-24 h-24 bg-neo-cyan border-2 border-black transform rotate-12"></div>
+<img alt="Abstract project dashboard preview" class="w-full h-full object-cover mix-blend-multiply opacity-80 group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkQRQYJpL4scVvQolsEFncZUxKqcPIvP0pgo4LWQgwR9GTuvve0JonVL3PLTnA-kPX9cz0T7VcezfSsrAdsGr6oMA8sCG1ojcslbsOLTuXYme0J4SvbxosIhM_pjVA7Jb3-2tt5033yBRJH0W7wD9OR1w3_ZDVVIw0Cm9NgD3Igc9KchxM0ttbE-y1MlB1jGc01U-RP6Jv8Zhpf9Eviip_Zl6dLJn2YlAk7bmJg6zNWLUxVArtFZZsE0IyJulfebzlv5SF611vano"/>
+</div>
+<div class="p-6 md:p-8 flex flex-col gap-4">
+<div class="flex justify-between items-start">
+<h3 class="text-3xl font-bold uppercase">Dashboard UI</h3>
+<a class="p-2 bg-black dark:bg-white text-white dark:text-black rounded-lg hover:scale-110 transition-transform" href="#">
+<span class="material-icons">north_east</span>
+</a>
+</div>
+<p class="text-gray-700 dark:text-gray-300 font-medium">
+                            A high-contrast analytics dashboard for data visualization. Built with pure brutalist principles and accessibility in mind.
+                        </p>
+<div class="flex flex-wrap gap-2 mt-auto pt-4">
+<span class="text-xs font-bold border border-black dark:border-white px-2 py-1 rounded bg-gray-100 dark:bg-gray-800">Vue.js</span>
+<span class="text-xs font-bold border border-black dark:border-white px-2 py-1 rounded bg-gray-100 dark:bg-gray-800">D3.js</span>
+</div>
+</div>
+</article>
+<article class="bg-surface-light dark:bg-surface-dark border-4 border-black dark:border-white rounded-2xl overflow-hidden shadow-neo dark:shadow-neo-dark-white hover:shadow-none hover:translate-x-[4px] hover:translate-y-[4px] transition-all duration-200 group">
+<div class="bg-primary h-48 sm:h-64 border-b-4 border-black dark:border-white flex items-center justify-center relative overflow-hidden">
+<div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 border-4 border-black rounded-full"></div>
+<div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-48 h-2 bg-black rotate-45"></div>
+<img alt="Fintech app interface" class="w-full h-full object-cover mix-blend-multiply opacity-80 group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtIC0DJwKrYB5utZOJ1Q9Mf3jj3twBgO4Iii4EMfy28xJHYy93fkfE3UaorGQQl4JvzSANTYS0TkYUFGNPcdULmjnwewUcJw0fF8YgKm2wwUoeLtodtZQ3GjWrqEXzH0FVvrRq09OtYKWLBDJ8YuebmBljUSQkezBLDo0KhkpZGEyzrg6QbrpmplU1KsYbniEnH1fEO_GebUvlX5TbVdh5_QWT3rHr2u1CEJHrtV9pN4SpVjMT0HRIT1NTfTivrcl55mLNXhzp98M"/>
+</div>
+<div class="p-6 md:p-8 flex flex-col gap-4">
+<div class="flex justify-between items-start">
+<h3 class="text-3xl font-bold uppercase">Fintech App</h3>
+<a class="p-2 bg-black dark:bg-white text-white dark:text-black rounded-lg hover:scale-110 transition-transform" href="#">
+<span class="material-icons">north_east</span>
+</a>
+</div>
+<p class="text-gray-700 dark:text-gray-300 font-medium">
+                            Mobile-first banking application focusing on gen-z user patterns. Includes dark mode and gamified savings.
+                        </p>
+<div class="flex flex-wrap gap-2 mt-auto pt-4">
+<span class="text-xs font-bold border border-black dark:border-white px-2 py-1 rounded bg-gray-100 dark:bg-gray-800">React Native</span>
+<span class="text-xs font-bold border border-black dark:border-white px-2 py-1 rounded bg-gray-100 dark:bg-gray-800">Firebase</span>
+</div>
+</div>
+</article>
+<article class="bg-surface-light dark:bg-surface-dark border-4 border-black dark:border-white rounded-2xl overflow-hidden shadow-neo dark:shadow-neo-dark-white hover:shadow-none hover:translate-x-[4px] hover:translate-y-[4px] transition-all duration-200 group">
+<div class="bg-neo-yellow h-48 sm:h-64 border-b-4 border-black dark:border-white flex items-center justify-center relative overflow-hidden">
+<span class="material-icons text-9xl text-black opacity-20 transform -rotate-12">shopping_bag</span>
+</div>
+<div class="p-6 md:p-8 flex flex-col gap-4">
+<div class="flex justify-between items-start">
+<h3 class="text-3xl font-bold uppercase">E-Commerce</h3>
+<a class="p-2 bg-black dark:bg-white text-white dark:text-black rounded-lg hover:scale-110 transition-transform" href="#">
+<span class="material-icons">north_east</span>
+</a>
+</div>
+<p class="text-gray-700 dark:text-gray-300 font-medium">
+                            A bespoke Shopify headless build for a streetwear brand. Features custom WebGL product configurator.
+                        </p>
+<div class="flex flex-wrap gap-2 mt-auto pt-4">
+<span class="text-xs font-bold border border-black dark:border-white px-2 py-1 rounded bg-gray-100 dark:bg-gray-800">Shopify</span>
+<span class="text-xs font-bold border border-black dark:border-white px-2 py-1 rounded bg-gray-100 dark:bg-gray-800">Three.js</span>
+</div>
+</div>
+</article>
+<article class="bg-surface-light dark:bg-surface-dark border-4 border-black dark:border-white rounded-2xl overflow-hidden shadow-neo dark:shadow-neo-dark-white hover:shadow-none hover:translate-x-[4px] hover:translate-y-[4px] transition-all duration-200 group">
+<div class="bg-neo-cyan h-48 sm:h-64 border-b-4 border-black dark:border-white flex items-center justify-center relative overflow-hidden">
+<div class="grid grid-cols-4 gap-2 w-full h-full p-4 opacity-30">
+<div class="bg-black rounded"></div><div class="bg-black rounded"></div><div class="bg-black rounded"></div><div class="bg-black rounded"></div>
+<div class="bg-black rounded"></div><div class="bg-black rounded"></div><div class="bg-black rounded"></div><div class="bg-black rounded"></div>
+</div>
+</div>
+<div class="p-6 md:p-8 flex flex-col gap-4">
+<div class="flex justify-between items-start">
+<h3 class="text-3xl font-bold uppercase">Portfolio v1</h3>
+<a class="p-2 bg-black dark:bg-white text-white dark:text-black rounded-lg hover:scale-110 transition-transform" href="#">
+<span class="material-icons">north_east</span>
+</a>
+</div>
+<p class="text-gray-700 dark:text-gray-300 font-medium">
+                            My previous portfolio site. A great study in minimalism before I embraced the chaos of Neo-Brutalism.
+                        </p>
+<div class="flex flex-wrap gap-2 mt-auto pt-4">
+<span class="text-xs font-bold border border-black dark:border-white px-2 py-1 rounded bg-gray-100 dark:bg-gray-800">HTML/SCSS</span>
+<span class="text-xs font-bold border border-black dark:border-white px-2 py-1 rounded bg-gray-100 dark:bg-gray-800">JS</span>
+</div>
+</div>
+</article>
+</div>
+</section>
+<section class="py-20">
+<h2 class="text-4xl md:text-5xl font-black uppercase mb-12 text-center decoration-wavy underline decoration-neo-pink underline-offset-8">Experience</h2>
+<div class="space-y-8 max-w-4xl mx-auto">
+<div class="relative bg-white dark:bg-gray-900 border-2 border-black dark:border-white p-6 rounded-xl shadow-neo dark:shadow-neo-dark-white flex flex-col md:flex-row gap-6 items-start">
+<div class="absolute -left-3 top-6 w-6 h-6 bg-neo-yellow border-2 border-black rounded-full hidden md:block z-10"></div>
+<div class="md:w-1/4">
+<span class="inline-block bg-black dark:bg-white text-white dark:text-black px-3 py-1 font-bold rounded text-sm mb-2">2022 - Present</span>
+<h4 class="font-bold text-lg">Senior Frontend Dev</h4>
+<p class="text-gray-500 text-sm">TechCorp Inc.</p>
+</div>
+<div class="md:w-3/4">
+<p class="text-gray-700 dark:text-gray-300">Leading the frontend team in rebuilding the legacy dashboard using Next.js. Improved performance by 40% and implemented a comprehensive design system.</p>
+</div>
+</div>
+<div class="relative bg-white dark:bg-gray-900 border-2 border-black dark:border-white p-6 rounded-xl shadow-neo dark:shadow-neo-dark-white flex flex-col md:flex-row gap-6 items-start">
+<div class="absolute -left-3 top-6 w-6 h-6 bg-neo-pink border-2 border-black rounded-full hidden md:block z-10"></div>
+<div class="md:w-1/4">
+<span class="inline-block bg-gray-200 dark:bg-gray-700 text-black dark:text-white border border-black dark:border-gray-500 px-3 py-1 font-bold rounded text-sm mb-2">2020 - 2022</span>
+<h4 class="font-bold text-lg">Web Developer</h4>
+<p class="text-gray-500 text-sm">Creative Agency X</p>
+</div>
+<div class="md:w-3/4">
+<p class="text-gray-700 dark:text-gray-300">Developed award-winning marketing sites for global brands. Specialized in GSAP animations and WebGL interactions.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20" id="contact">
+<div class="bg-primary border-4 border-black dark:border-white rounded-3xl p-8 md:p-16 text-center shadow-neo dark:shadow-neo-dark-white relative overflow-hidden">
+<div class="absolute top-0 left-0 w-32 h-32 bg-white opacity-20 rounded-full blur-xl transform -translate-x-1/2 -translate-y-1/2"></div>
+<h2 class="text-4xl md:text-6xl font-black mb-6 text-black">GOT A PROJECT?</h2>
+<p class="text-xl font-medium mb-10 max-w-xl mx-auto text-black">
+                    Let's create something weird and wonderful together. My inbox is always open for opportunities.
+                </p>
+<div class="flex flex-col sm:flex-row justify-center gap-4">
+<a class="inline-flex items-center justify-center bg-black text-white border-2 border-black px-8 py-4 text-xl font-bold rounded-xl shadow-[4px_4px_0px_0px_#fff] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none transition-all" href="mailto:hello@rizky.dev">
+<span class="material-icons mr-2">email</span>
+                        Email Me
+                    </a>
+<button class="inline-flex items-center justify-center bg-white text-black border-2 border-black px-8 py-4 text-xl font-bold rounded-xl shadow-[4px_4px_0px_0px_#000] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none transition-all">
+                        Copy Details
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-black dark:bg-surface-dark text-white py-12 border-t-4 border-black dark:border-white">
+<div class="max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="text-center md:text-left">
+<h3 class="text-2xl font-bold uppercase mb-2">Rizky<span class="text-primary">.dev</span></h3>
+<p class="text-gray-400">© 2023. Built with heavy borders and love.</p>
+</div>
+<div class="flex gap-6">
+<a class="w-10 h-10 flex items-center justify-center rounded bg-white text-black font-bold hover:bg-primary transition-colors" href="#">Li</a>
+<a class="w-10 h-10 flex items-center justify-center rounded bg-white text-black font-bold hover:bg-neo-pink transition-colors" href="#">Tw</a>
+<a class="w-10 h-10 flex items-center justify-center rounded bg-white text-black font-bold hover:bg-neo-cyan transition-colors" href="#">Gh</a>
+</div>
+</div>
+</footer>
+<script>
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const htmlElement = document.documentElement;
+        // Check local storage or system preference
+        if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            htmlElement.classList.add('dark');
+        } else {
+            htmlElement.classList.remove('dark');
+        }
+        themeToggleBtn.addEventListener('click', () => {
+            htmlElement.classList.toggle('dark');
+            if (htmlElement.classList.contains('dark')) {
+                localStorage.setItem('theme', 'dark');
+            } else {
+                localStorage.setItem('theme', 'light');
+            }
+        });
+    </script>
+
+</body></html>
