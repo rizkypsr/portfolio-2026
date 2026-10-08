@@ -67,6 +67,46 @@ export const portfolioData: PortfolioData = {
   ],
   projects: [
     {
+      id: 'simpel-zone',
+      title: 'SIMPEL ZONE - Sistem Informasi Manajemen Pelayanan Perizinan dan Non Perizinan Elektronik',
+      description:
+        'Aplikasi layanan perizinan elektronik untuk DPMPTSP Kota Pontianak yang mendukung pengajuan, verifikasi, hingga penerbitan surat izin untuk sektor pendidikan, kesehatan, pekerjaan umum, perhubungan, dan kesehatan hewan.',
+      overview:
+        'SIMPEL ZONE adalah aplikasi layanan pemerintah yang dikembangkan untuk Dinas Penanaman Modal dan Pelayanan Terpadu Satu Pintu (DPMPTSP) Kota Pontianak. Sistem ini mendukung proses pengajuan, verifikasi, pengelolaan, hingga penerbitan izin secara elektronik untuk sektor Pendidikan, Kesehatan, Pekerjaan Umum, Perhubungan, dan Kesehatan Hewan, dengan hasil akhir berupa surat izin yang diterbitkan oleh DPMPTSP Kota Pontianak. SIMPEL ZONE terdiri dari 3 aplikasi yang terintegrasi dalam satu sistem: API sebagai backend utama (Laravel 13), web verifikator/internal (Laravel 11 + Blade), dan web pemohon (Nuxt.js).',
+      features: [
+        'Manajemen pengajuan perizinan secara elektronik untuk berbagai sektor pelayanan',
+        'Manajemen verifikasi dokumen oleh petugas/verifikator',
+        'Workflow pelayanan terstruktur mulai dari pengajuan, verifikasi, perbaikan, hingga penerbitan izin',
+        'Manajemen dokumen untuk upload, penyimpanan, dan pengelolaan dokumen persyaratan',
+        'Tracking status pengajuan secara online oleh pemohon',
+        'Penerbitan surat izin setelah seluruh tahapan verifikasi dan validasi selesai',
+        'Dashboard verifikator untuk monitoring permohonan yang perlu diproses',
+        'Riwayat permohonan dan perubahan status',
+        'Manajemen data permohonan dan jenis izin dari berbagai sektor',
+        'Antarmuka web pemohon responsif untuk desktop maupun mobile',
+      ],
+      techStack: [
+        'Laravel 13',
+        'Laravel 11',
+        'Blade',
+        'Nuxt.js',
+        'PHP',
+        'MySQL',
+        'RESTful API',
+      ],
+      accentColor: 'cyan',
+      role: 'Fullstack Developer',
+      link: 'https://onlineptsp.pontianak.go.id/',
+      images: [
+        'https://github.com/user-attachments/assets/737b08ca-8988-4ed5-b74d-c80d65274aeb',
+        'https://github.com/user-attachments/assets/99ff3aca-1256-4e04-9de0-a0d46013a89d',
+        'https://github.com/user-attachments/assets/8e6e5dec-3acd-4f8e-9900-a57685027467',
+        'https://github.com/user-attachments/assets/8d69d926-3564-4876-8842-c496e79f1e55',
+        'https://github.com/user-attachments/assets/7f8e1026-1e01-46f2-82e9-52cf2ce3bf2c',
+        'https://github.com/user-attachments/assets/5aaaab2b-bc09-4de9-b83b-34661d263c37',
+      ],
+    },
+    {
       id: 'masterluindonesia',
       title: 'Master Lu Indonesia - Website Keagamaan',
       description:
