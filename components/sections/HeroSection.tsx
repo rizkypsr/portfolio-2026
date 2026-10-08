@@ -37,7 +37,7 @@ export function HeroSection() {
         {/* Introduction paragraph with left border */}
         <div className="border-l-4 border-neo-primary pl-4 sm:pl-6 mb-8 md:mb-10 max-w-xl">
           <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-            Hi, I&apos;m Rizky — a Full Stack Developer from Indonesia with 5+ years of experience in web & mobile app development. I turn complex problems into chunky, beautiful, and functional code.
+            Hi, I&apos;m Rizky - a Full Stack Developer from Indonesia with 5+ years of experience in web & mobile app development. I turn complex problems into chunky, beautiful, and functional code.
           </p>
         </div>
 
